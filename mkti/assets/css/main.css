@@ -1567,7 +1567,7 @@
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
-		font-family: "Roboto", Helvetica, sans-serif;
+		font-family: "Raleway", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
 		line-height: 1.75em;
@@ -2519,7 +2519,7 @@
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			padding-left: 2em;
 		}
 
 		ul.alt {
@@ -3290,7 +3290,11 @@
 					display: inline-block;/*
 					margin-left: 0.5em;*/
 				}
-
+				#header nav ul li a
+				{
+					font-family: 'Raleway', sans-serif;
+					font-weight: 200;
+				}
 					#header nav ul li a, #header nav ul li span {
 						border: 0;
 						color: inherit;

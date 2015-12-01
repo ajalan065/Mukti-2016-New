@@ -1567,7 +1567,7 @@
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.75);
-		font-family: "Roboto", Helvetica, sans-serif;
+		font-family: "Raleway", Helvetica, sans-serif;
 		font-size: 15pt;
 		font-weight: 100;
 		line-height: 1.75em;
@@ -2519,7 +2519,7 @@
 	}
 
 		ul li {
-			padding-left: 0.5em;
+			padding-left: 2em;
 		}
 
 		ul.alt {
@@ -3290,7 +3290,11 @@
 					display: inline-block;/*
 					margin-left: 0.5em;*/
 				}
-
+				#header nav ul li a
+				{
+					font-family: 'Raleway', sans-serif;
+					font-weight: 200;
+				}
 					#header nav ul li a, #header nav ul li span {
 						border: 0;
 						color: inherit;
@@ -3328,6 +3332,9 @@
 		position: fixed;
 		font-weight: bold;
 		font-size: large;
+		top: 20px;
+		left: 5%;
+		width: 90%;
 	}
 
 /* Banner */
@@ -3335,7 +3342,7 @@
 	#banner {
 		background-attachment: fixed;
 		background-color: #272833;
-		background-image: url("images/banner.jpg");
+		background-image: url("../../images/banner.jpg");
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
@@ -3354,10 +3361,10 @@
 		}
 
 		#banner:after {
-			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
-			background-image: linear-gradient(top, rgba(23, 24, 32, 0.95), rgba(23, 24, 32, 0.95)), url("images/overlay.png");;
+			background-image: -moz-linear-gradient(top, rgba(23, 24, 32, 0.75), rgba(23, 24, 32, 0.75)), url("images/overlay.png");;
+			background-image: -webkit-linear-gradient(top, rgba(23, 24, 32, 0.75), rgba(23, 24, 32, 0.75)), url("images/overlay.png");;
+			background-image: -ms-linear-gradient(top, rgba(23, 24, 32, 0.75), rgba(23, 24, 32, 0.75)), url("images/overlay.png");;
+			background-image: linear-gradient(top, rgba(23, 24, 32, 0.75), rgba(23, 24, 32, 0.75)), url("images/overlay.png");;
 			content: '';
 			display: block;
 			height: 100%;

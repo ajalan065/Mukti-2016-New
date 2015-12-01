@@ -15,13 +15,10 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/comp.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/comp2.css">
     <link rel="stylesheet" href="assets/css/animate/animate.css">
     <script src="assets/js/toucheffects.js"></script>
     <script src="assets/js/modernizr.custom.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script>
-      new WOW().init();
-    </script>
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <script type="text/javascript">
@@ -44,178 +41,6 @@
       border-bottom: transparent;
     }
     </style>
-
-    <style type="text/css">
-    /*********************************************************************************/
-/* Carousel                                                                      */
-/*********************************************************************************/
-
-  .carousel
-  {
-  }
-
-    .carousel .forward,
-    .carousel .backward
-    {
-      border-radius: 100%;
-      background-color: #483949;
-      width: 7em;
-      height: 7em;
-      margin-top: -3.5em;
-      border-radius: 100%;
-    }
-
-      .carousel .forward
-      {
-        right: -3.5em;
-      }
-
-      .carousel .backward
-      {
-        left: -3.5em;
-      }
-
-      .carousel .forward:before,
-      .carousel .backward:before
-      {
-        display: none;
-      }
-.carousel
-  {
-    position: relative;
-    overflow: hidden;
-    padding: 1em 0 2em 0;
-    margin-bottom: 0;
-  }
-
-    .carousel .forward,
-    .carousel .backward
-    {
-      position: absolute;
-      top: 50%;
-      width: 6em;
-      height: 12em;
-      margin-top: -6em;
-      cursor: pointer;
-    }
-
-    .carousel .forward
-    {
-      right: 0;
-    }
-
-    .carousel .backward
-    {
-      left: 0;
-    }
-
-      .carousel .forward:before,
-      .carousel .backward:before
-      {
-        content: '';
-        display: block;
-        width: 6em;
-        height: 6em;
-        border-radius: 100%;
-        background-color: rgba(72, 189, 130, 0.7);
-        position: absolute;
-        top: 50%;
-        margin-top: -3em;
-        -moz-transition: background-color 0.35s ease-in-out;
-        -webkit-transition: background-color 0.35s ease-in-out;
-        -o-transition: background-color 0.35s ease-in-out;
-        -ms-transition: background-color 0.35s ease-in-out;
-        transition: background-color 0.35s ease-in-out;
-        -webkit-backface-visibility: hidden;
-      }
-
-      .carousel .forward:after,
-      .carousel .backward:after
-      {
-        content: '';
-        width: 3em;
-        height: 3em;
-        position: absolute;
-        top: 50%;
-        margin: -1.5em 0 0 0;
-        background: url('images/arrow1.svg') no-repeat center center;
-      }
-
-      .carousel .forward:after
-      {
-        right: -0.25em;
-      }
-
-      .carousel .backward:after
-      {
-        left: -0.25em;
-        -moz-transform: scaleX(-1);
-        -webkit-transform: scaleX(-1);
-        -o-transform: scaleX(-1);
-        -ms-transform: scaleX(-1);
-        transform: scaleX(-1);
-        }
-
-      .carousel .forward:before
-      {
-        right: -3em;
-      }
-
-      .carousel .backward:before
-      {
-        left: -3em;
-      }
-
-      .carousel .forward:hover:before,
-      .carousel .backward:hover:before
-      {
-        background-color: rgba(72, 189, 130,0.9);
-      }
-
-    .carousel .reel
-    {
-      white-space: nowrap;
-      position: relative;
-      -webkit-overflow-scrolling: touch;
-      padding: 0 2em 0 2em;
-    }
-    .reel article header h3
-    {
-      font-size:1.4em;
-      color: #000;
-    }
-
-
-      .carousel article.loading
-      {
-        opacity: 0;
-      }
-
-      .carousel article .image
-      {
-        position: relative;
-        left: -1em;
-        top: 0;
-        width: auto;
-        margin-right: -2em;
-        margin-bottom: 0.5em;
-        overflow: hidden;
-        border-top:5px solid rgba(72, 189, 130,0.99);
-      }
-      .carousel article .image img:hover
-      {
-        transform:scale(1.18);
-        -webkit-transform:scale(1.18);
-        -moz-transform:scale(1.18);
-        -o-transform:scale(1.18);
-        transition: all 0.2s;
-      }
-
-    </style>
-
-
-
-
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
@@ -224,7 +49,7 @@
 				<header id="header">
 					<h1 id="logo"><a href="index.html">Landed</a></h1>
 					<nav id="nav">
-						<ul class="sf-menu">
+						<ul>
                   <li><a onClick="goToByScroll('page1'); return false;" href="#">Home </a> <strong class="hover"></strong></li>
                   <li><a onClick="goToByScroll('page2'); return false;" href="#">About Us</a><strong class="hover"></strong></li>
                   <li><a onClick="goToByScroll('page3'); return false;" href="#">What's in Store</a> <strong class="hover"></strong></li>
@@ -309,58 +134,58 @@
         <section id="three" class="wrapper style1 special fade-up">
         <section class="carousel">
           <div class="reel">
-            <ul class="car c-style-5">
+            <ul class="car c-style-6">
         <li>
-          <figure>
-            <img src=" images/thumbs/codecracker.jpg" alt="img01">
+          <figure class="wow slideInDown" data-wow-duration="2s" data-wow-delay="0.3s">
+            <img src=" images/thumbs/codecracker.jpg" alt="CodeCracker">
             <figcaption>
               <a href=""><h4>Codecracker</h4></a>
             </figcaption>
           </figure>
         </li>
         <li>
-          <figure>
-            <img src=" images/thumbs/treasure.jpg" alt="img02">
+          <figure class="wow slideInDown" data-wow-duration="2s" data-wow-delay="0.3s">
+            <img src=" images/thumbs/treasure.jpg" alt="OTH">
             <figcaption>
-              <a href=""><h4> Online <br> Treasure Hunt</h4></a>
+              <a href=""><h4> Online Treasure Hunt</h4></a>
             </figcaption>
           </figure>
         </li>
         <li>
-          <figure>
-            <img src=" images/thumbs/freepl.jpg" alt="img04">
+          <figure class="wow slideInDown" data-wow-duration="2s" data-wow-delay="0.6s">
+            <img src=" images/thumbs/freepl.jpg" alt="Freepl" >
             <figcaption>
               <a href=""><h4>FreePL</h4></a>
             </figcaption>
           </figure>
         </li>
         <li>
-          <figure>
-            <img src=" images/thumbs/freemex.jpg" alt="img05">
+          <figure class="wow slideInDown" data-wow-duration="2s" data-wow-delay="0.6s">
+            <img src=" images/thumbs/freemex.jpg" alt="Freemex" >
             <figcaption>
-              <a href=""><h4> Freemex</h4></a>
+              <a href=""><h4>Freemex</h4></a>
             </figcaption>
           </figure>
         </li>
         <li>
-          <figure>
-            <img src=" images/thumbs/shootball.jpg" alt="img03">
+          <figure class="wow slideInDown" data-wow-duration="2s" data-wow-delay="0.9s">
+            <img src=" images/thumbs/shootball.jpg" alt="Shootball" >
             <figcaption>
               <a href=""><h4>Fantasy Shootball</h4></a>
             </figcaption>
           </figure>
         </li>
         <li>
-          <figure>
-            <img src=" images/thumbs/lipi.jpg" alt="img06">
+          <figure class="wow slideInDown" data-wow-duration="2s" data-wow-delay="0.9s">
+            <img src=" images/thumbs/lipi.jpg" alt="Lipi" >
             <figcaption>
               <a href=""><h4> Lipi </h4></a>
             </figcaption>
           </figure>
         </li>
         <li>
-          <figure>
-            <img src=" images/thumbs/incanity.jpg" alt="img06">
+          <figure class="wow slideInDown" data-wow-duration="2s" data-wow-delay="1.2s">
+            <img src=" images/thumbs/incanity.jpg" alt="Incanity">
             <figcaption>
               <a href=""><h4> InCanity </h4></a>
             </figcaption>
@@ -477,7 +302,7 @@
 				<section id="eight" class="wrapper style2 special fade">
 					<div class="container">
           <h4 class="wow slideInDown"> We appreciate the contributions of our Major Sponsor for Mukti '16</h4>
-          <ul class="car c-style-3">
+          <ul class="cars c-style-3">
                       <li>
                         <figure>
                           <img src="images/sponsors/info.png" class="wow bounceInDown" />
@@ -489,7 +314,7 @@
                     </ul>
             <h4 class="wow slideInDown"> We also thank for their contributions</h4>
                     <div id="morespon">
-                  <ul class="car c-style-3">
+                  <ul class="cars c-style-3">
                     <li>
                       <figure>
                         <img src="images/sponsors/open.jpg" />
@@ -501,7 +326,7 @@
                   </ul>
                 </div>
                     <div id="past" class="section">
-                  <ul class="car c-style-3">
+                  <ul class="cars c-style-3">
                     <li>
                       <figure>
                         <img src="images/sponsors/max.png" />
@@ -521,7 +346,7 @@
                   </ul>
                 </div>
                 <div id="present" class="section">
-                  <ul class="car c-style-3">
+                  <ul class="cars c-style-3">
                     <li>
                       <figure>
                         <img src="images/sponsors/open.jpg" />
@@ -628,6 +453,9 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+      <script src="assets/js/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
 	</body>
 </html>

@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/comp.css">
     <link rel="stylesheet" type="text/css" href="assets/css/comp2.css">
     <link rel="stylesheet" href="assets/css/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/custmod.css">
     <!-- Google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,600' rel='stylesheet' type='text/css'>
     <script src="assets/js/toucheffects.js"></script>
@@ -25,24 +26,15 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <script type="text/javascript">
       function goToByScroll(id){
-        $('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+        $('html,body').animate({scrollTop: $("#"+id).offset().top},2000);
       }
 
       function toggleVisibility(newSection) {
-        $("#morespon").hide();
-      $(".section").not("#" + newSection).hide();
-      $("#" + newSection).show('fade');
+        $("#morespon").fadeOut();
+      $(".section").not("#" + newSection).fadeOut(800);
+      $("#" + newSection).fadeIn(800);
       }
     </script>
-    <style type="text/css">
-    #cntct img {
-      border-radius: 50%;
-    }
-    #footer a:link {
-      color: #F5F5DC;
-      border-bottom: transparent;
-    }
-    </style>
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
@@ -81,29 +73,22 @@
 			<!-- One -->
       <div id="page2">
 				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+					<span class="image fit main"><img src="images/aboutus.jpg" alt="" /></span>
 					<div class="content">
 						<div class="container">
 							<div class="row">
-								<div class="4u 12u$(medium)">
-									<header>
-										<h2>Odio faucibus ipsum integer consequat</h2>
-										<p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
-									</header>
+								<div class="5u 12u$(medium)">
+									<h5 style="text-align: justify;"> The GNU/Linux Users’ Group of NIT Durgapur (NITDGP LUG) is a community of GNU/Linux users and promoters of Free and Open Source Software.
+
+                The Group was established in 2003 by a bunch of FOSS enthusiasts with the objective of spreading awareness about the world of Free and Open Source Softwares and popularising their use in the campus. Since then the group has evolved into a body that is now an active part of the open source community through numerous contributions to a wide range of open source projects. The group strives hard to introduce the philosophy and encourage the use of FOSS across all departments of study, here at NIT Durgapur. We, the members, believe that Software freedom is as essential as the civil liberty of freedom of Speech.</h5>
 								</div>
-								<div class="4u 12u$(medium)">
-									<p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
-									Blandit orci porttitor semper. Arcu phasellus tortor enim mi
-									nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
-									augue varius tempus lobortis porttitor accumsan consequat
-									adipiscing lorem dolor.</p>
+								<div class="2u 12u$(medium)">
+									<img src="images/glug.gif" align="middle;" width="150" height="150" />
 								</div>
-								<div class="4u$ 12u$(medium)">
-									<p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
-									adipiscing adipiscing metus massa. Blandit orci porttitor semper.
-									Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
-									mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
-									ipsum dolor nullam.</p>
+								<div class="5u$ 12u$(medium)">
+									<h5 style="text-align: justify;"> MUKTI, the only FOSS Festival of Eastern India, is a three-day meet at NIT Durgapur where we celebrate the freedom of Open Source.
+
+                Owing to the success attained by it in recent years, it attracts a lot of participation and has been a venue where students of various age groups and domains, professionals (of both IT and non-IT fields), enthusiasts and the curious have come together to get introduced to FOSS, interact with each other and share their experiences. The intense atmosphere of competition is doubled up with Talks and Workshops by few of the brightest and most active minds in the Indian Open Source community. </h5>
 								</div>
 							</div>
 						</div>
@@ -119,12 +104,9 @@
 					<div class="content">
 						<header>
 							<h2>Interdum amet non magna accumsan</h2>
-							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+							<p>Major Attraction This Mukti</p>
 						</header>
 						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
 					</div>
 					<a href="#three" class="goto-next scrolly">Next</a>
 				</section>
@@ -186,7 +168,7 @@
           </figure>
         </li>
         <li>
-          <figure class="wow slideInUp" data-wow-duration="2s" data-wow-delay="1.2s">
+          <figure class="wow slideInUp" data-wow-duration="2s" data-wow-delay="1s">
             <img src=" images/thumbs/incanity.jpg" alt="Incanity" id="ig4">
             <figcaption>
               <a href=""><h4> InCanity </h4></a>
@@ -239,6 +221,8 @@
             <a href="#four" class="goto-next scrolly">Next</a>
         </section>
         </div>
+
+
 			<!-- Four -->
       <div id="page5">
 				<section id="four" class="spotlight style3 left">
@@ -249,9 +233,6 @@
 							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
 						</header>
 						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
 					</div>
 					<a href="#five" class="goto-next scrolly">Next</a>
 				</section>
@@ -263,9 +244,6 @@
               <p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
             </header>
             <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-            <ul class="actions">
-              <li><a href="#" class="button">Learn More</a></li>
-            </ul>
           </div>
           <a href="#six" class="goto-next scrolly">Next</a>
         </section>
@@ -277,9 +255,6 @@
               <p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
             </header>
             <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-            <ul class="actions">
-              <li><a href="#" class="button">Learn More</a></li>
-            </ul>
           </div>
           <a href="#seven" class="goto-next scrolly">Next</a>
         </section>
@@ -291,9 +266,6 @@
               <p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
             </header>
             <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
-            <ul class="actions">
-              <li><a href="#" class="button">Learn More</a></li>
-            </ul>
           </div>
           <a href="#eight" class="goto-next scrolly">Next</a>
         </section>
@@ -359,8 +331,14 @@
                     </li>
                   </ul>
                 </div>
+                <div class="row">
+                <div class="6u 12u$(medium)">
                     <button class="button" onclick="toggleVisibility('past');">Past Sponsors</button>
+                    </div>
+                    <div class="6u 12u$(medium)">
                     <button class="button" autofocus onclick="toggleVisibility('present');">2016 Sponsors</button>
+                    </div>
+                    </div>
 					</div>
           </div>
 				</section>
@@ -369,7 +347,7 @@
 			<!-- Footer -->
       <div id="last">
 				<footer id="footer">
-
+          <div id="googlemaps"></div>
         <div class="content">
           <div class="container">
             <div class="row">
@@ -397,10 +375,10 @@
                   <br />
                   <section class="wow slideInUp">Follow Mukti '16<br />
                     <ul class="icons">
-                      <li><a href="https://twitter.com/mukti_nitd" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-                      <li><a href="https://www.facebook.com/muktinitdurgapur" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-                      <li><a href="https://www.youtube.com/channel/UCYZPnN5vP5B1sINLLkI1aDA" class="icon alt fa-youtube"><span class="label">Youtube</span></a></li>
-                      <li><a href="https://github.com/lugnitdgp" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+                      <li id="connectwus"><a href="https://twitter.com/mukti_nitd" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+                      <li id="connectwus"><a href="https://www.facebook.com/muktinitdurgapur" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+                      <li id="connectwus"><a href="https://www.youtube.com/channel/UCYZPnN5vP5B1sINLLkI1aDA" class="icon alt fa-youtube" target="_blank"><span class="label">Youtube</span></a></li>
+                      <li id="connectwus"><a href="https://github.com/lugnitdgp" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
                     </ul>
                   </section>
                 </div>
@@ -415,18 +393,19 @@
             <div class="container">
               <div class="row">
                 <div class="4u 12u$(medium)">
-                <div class="wow fadeInLeft">
-                <a href="http://nitdgplug.org"><img src="images/glug.gif" style="width: 5em; height: 5em" alt="GLUG"/></a>
+                <div class="wow rollIn" data-wow-duration="2s">
+                <a href="http://nitdgplug.org"><img id="infpic" src="images/glug.gif" style="width: 5em; height: 5em" alt="GLUG"/></a>
                 </div>
                 </div>
                 <div class="4u 12u$(medium)">
-                <div class="wow fadeInUp">
+                <div class="wow fadeInUp" data-wow-duration="2s">
                 <br />
-                  <a href="http://http://forum.nitdgplug.org/" target="_blank">Visit GLUG Forums</a>
+                  <a href="http://http://forum.nitdgplug.org/" target="_blank"
+                  class="visit">Visit GLUG Forums</a>
                 </div>
                 </div>
                 <div class="4u$ 12u$(medium)">
-                <div class="wow fadeInRight">
+                <div class="wow fadeInRight" data-wow-duration="2s">
                   <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fmuktinitdurgapur&amp;width=350&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=80&amp;appId=1491004191126023" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:100px;background: darkgrey; padding: 0.5em;border-radius: 5px;" allowTransparency="true"></iframe>
                 </div>
                 </div>

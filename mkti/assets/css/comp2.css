@@ -10,9 +10,7 @@
   display: inline-block;
   width: 480px;
   height: 400px;
-  margin-left: -15px;
-  padding-right: -5px;
-  padding-left: -5px;
+  margin-left: -38px;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: left;
@@ -59,7 +57,15 @@
     background: #ed4e6e;
     color: #fff;
   }
-
+.car figure #ig2 {
+  margin-top: -9px;
+}
+.car figure #ig3 {
+  margin-top: -18px;
+}
+.car figure #ig4 {
+  margin-top: -27px;
+}
 
 .c-style-6 figure img {
   z-index: 10;
@@ -70,10 +76,10 @@
 
 .no-touch .c-style-6 figure:hover img,
 .c-style-6 figure.c-hover img {
-  -webkit-transform: translateY(-50px) scale(0.5);
-  -moz-transform: translateY(-50px) scale(0.5);
-  -ms-transform: translateY(-50px) scale(0.5);
-  transform: translateY(-50px) scale(0.5);
+  -webkit-transform: translateY(-30px) scale(0.7);
+  -moz-transform: translateY(-30px) scale(0.7);
+  -ms-transform: translateY(-30px) scale(0.7);
+  transform: translateY(-30px) scale(0.7);
 }
 
 .c-style-6 figcaption {

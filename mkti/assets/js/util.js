@@ -4,6 +4,7 @@
 	 * Generate an indented list of links from a nav. Meant for use with panel().
 	 * @return {jQuery} jQuery object.
 	 */
+	 var ids=1;
 	$.fn.navList = function() {
 
 		var	$this = $(this);
@@ -18,7 +19,7 @@
 				target = $this.attr('target');
 
 			b.push(
-				'<a ' +
+				'<a href="index.html#page'+ids+'" ' +
 					'class="link depth-' + indent + '"' +
 					( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
 					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
@@ -27,6 +28,7 @@
 					$this.text() +
 				'</a>'
 			);
+			ids++;
 
 		});
 

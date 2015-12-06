@@ -18,6 +18,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/comp2.css">
     <link rel="stylesheet" href="assets/css/animate/animate.css">
     <link rel="stylesheet" type="text/css" href="assets/css/custmod.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/menu_topexpand.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/contcir/demo.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/contcir/common.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/contcir/style2.css" />
     <!-- Google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,600' rel='stylesheet' type='text/css'>
     <script src="assets/js/toucheffects.js"></script>
@@ -36,25 +40,42 @@
       }
     </script>
 	</head>
+
+
 	<body class="landing">
+  <header id="header">
+    <button class="fa fa-bars" id="open-button"></button>
+    <h1 id="logo"><a href="index.html" style="left: 10%;">Landed</a></h1>
+  </header>
 		<div id="page-wrapper">
-
+      <div class="menu-wrap">
+            <nav class="menu" id="nav">
+              <div class="icon-list">
+                <a onClick="goToByScroll('page1'); return false;"><i class="fa fa-home"></i><span>Home</span></a>
+                <a onClick="goToByScroll('page2'); return false;"><i class="fa fa-linux"></i><span>About Us</span></a>
+                <a onClick="goToByScroll('page3'); return false;"><i class="fa fa-star"></i><span>What's In Store</span></a>
+                <a onClick="goToByScroll('page4'); return false;"><i class="fa fa-fw fa-heart-o"></i><span>Events</span></a>
+                <a onClick="goToByScroll('page5'); return false;"><i class="fa fa-mortar-board"></i><span>Workshops</span></a>
+                <a onClick="goToByScroll('page6'); return false;"><i class="fa fa-fw fa-newspaper-o"></i><span>Sponsors</span></a>
+                <a onClick="goToByScroll('last'); return false;"><i class="fa fa-phone"></i><span>Contacts</span></a>
+              </div>
+            </nav>
+          </div>
 			<!-- Header -->
-				<header id="header">
-					<h1 id="logo"><a href="index.html">Landed</a></h1>
-					<nav id="nav">
-						<ul>
-                  <li><a onClick="goToByScroll('page1'); return false;" href="#">Home </a> <strong class="hover"></strong></li>
-                  <li><a onClick="goToByScroll('page2'); return false;" href="#">About Us</a><strong class="hover"></strong></li>
-                  <li><a onClick="goToByScroll('page3'); return false;" href="#">What's in Store</a> <strong class="hover"></strong></li>
-                  <li><a onClick="goToByScroll('page4'); return false;" href="#">Events</a> <strong class="hover"></strong></li>
-                  <li><a onClick="goToByScroll('page5'); return false;" href="#">Workshops</a> <strong class="hover"></strong></li>
-                  <li><a onClick="goToByScroll('page6'); return false;" href="#">Sponsors</a> <strong class="hover"></strong></li>
-                  <li><a onClick="goToByScroll('last'); return false;" href="#">Contacts</a> <strong class="hover"></strong></li>
-                </ul>
-					</nav>
-				</header>
 
+					<!-- <nav id="nav">
+						<ul>
+                  <li><a onClick="goToByScroll('page1'); return false;" href="#" style="color: #262626;">Home </a> <strong class="hover"></strong></li>
+                  <li><a onClick="goToByScroll('page2'); return false;" href="#" style="color: #262626;">About Us</a><strong class="hover"></strong></li>
+                  <li><a onClick="goToByScroll('page3'); return false;" href="#" style="color: #262626;">What's in Store</a> <strong class="hover"></strong></li>
+                  <li><a onClick="goToByScroll('page4'); return false;" href="#" style="color: #262626;">Events</a> <strong class="hover"></strong></li>
+                  <li><a onClick="goToByScroll('page5'); return false;" href="#" style="color: #262626;">Workshops</a> <strong class="hover"></strong></li>
+                  <li><a onClick="goToByScroll('page6'); return false;" href="#" style="color: #262626;">Sponsors</a> <strong class="hover"></strong></li>
+                  <li><a onClick="goToByScroll('last'); return false;" href="#" style="color: #262626;">Contacts</a> <strong class="hover"></strong></li>
+                </ul>
+					</nav> -->
+          <div class="content-wrap">
+          <div class="contentnav">
 			<!-- Banner -->
       <div id="page1">
 				<section id="banner">
@@ -347,28 +368,71 @@
 			<!-- Footer -->
       <div id="last">
 				<footer id="footer">
-          <div id="googlemaps"></div>
         <div class="content">
           <div class="container">
             <div class="row">
-              <div class="4u 12u$(medium)">
-                <div id="cntct" class="wow zoomIn">
+              <div class="8u 12u$(medium)">
+                <!-- <div id="cntct" class="wow zoomIn">
                   <img src="images/namit.jpg" />
                   <h4>Namit Mahuvakar</h4>
                   <p>President<br />+91-9804223050</p>
+                </div> -->
+               <div class="wow zoomIn" data-wow-duration="2s">
+                <div class="circont">
+                  <section class="cirmain">
+                    <ul class="ch-grid">
+                      <li>
+                        <div class="ch-item ch-img-1">
+                          <div class="ch-info">
+                            <h3>Namit Mahuvakar</h3>
+                            <p>President</p>
+                            <p>+91-9804223050</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="ch-item ch-img-2">
+                          <div class="ch-info">
+                            <h3>Arijit Karmakar</h3>
+                            <p>Convenor</p>
+                            <p>+91-9635268140</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
                 </div>
+               </div>
               </div>
 
-              <div class="4u 12u$(medium)">
-                <div id="cntct" class="wow zoomIn">
+            <!--   <div class="4u 12u$(medium)">
+               <div class="wow zoomIn" data-wow-duration="2s">
+                <div class="circont">
+                  <section class="cirmain">
+                    <ul class="ch-grid">
+                      <li>
+                        <div class="ch-item ch-img-2">
+                          <div class="ch-info">
+                            <h3>Arijit Karmakar</h3>
+                            <p>Convenor</p>
+                            <p>+91-9635268140</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+               </div>
+              </div> -->
+                <!-- <div id="cntct" class="wow zoomIn">
                   <img src="images/arijit.jpg" />
                   <h4>Arijit Karmakar</h4>
                   <p>Convenor<br />+91-9635268140</p>
-                </div>
-              </div>
+                </div> -->
+
               <div class="4u$ 12u$(medium)">
                 <br /><br />
-                <div class="wow slideInUp">
+                <div class="wow slideInUp" data-wow-duration="2s">
                   <h3>Contact us</h3>
                   <address>Mahatma Gandhi Avenue, A-Zone, Durgapur, West Bengal-713209
                   </address>
@@ -394,7 +458,7 @@
               <div class="row">
                 <div class="4u 12u$(medium)">
                 <div class="wow rollIn" data-wow-duration="2s">
-                <a href="http://nitdgplug.org"><img id="infpic" src="images/glug.gif" style="width: 5em; height: 5em" alt="GLUG"/></a>
+                <a href="http://nitdgplug.org" target="_blank"><img id="infpic" src="images/glug.gif" style="width: 5em; height: 5em" alt="GLUG"/></a>
                 </div>
                 </div>
                 <div class="4u 12u$(medium)">
@@ -424,6 +488,8 @@
 </iframe>
 
 		</div>
+    </div>
+    </div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -435,6 +501,8 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
       <script src="assets/js/wow.min.js"></script>
+      <script src="assets/js/classie.js"></script>
+    <script src="assets/js/navmain.js"></script>
       <script>
         new WOW().init();
       </script>

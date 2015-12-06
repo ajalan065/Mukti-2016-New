@@ -82,7 +82,7 @@
 						resetForms: true,
 						side: 'left',
 						target: $body,
-						visibleClass: 'navPanel-visible'
+						visibleClass: 'navPanel-visible',
 					});
 
 			// Fix: Remove navPanel transitions on WP<10 (poor/buggy performance).

@@ -1631,6 +1631,7 @@
 
 	h5 {
 		font-size: 0.9em;
+		font-weight: 500;
 		line-height: 1.5em;
 	}
 
@@ -2993,12 +2994,12 @@
 		}
 
 		.spotlight.top .content {
-			border-bottom-width: 0.35em;
+			border-bottom-width: 0.1em;
 			top: 0;
 		}
 
 		.spotlight.bottom .content {
-			border-top-width: 0.35em;
+			border-top-width: 0.1em;
 			bottom: 0;
 		}
 
@@ -3020,7 +3021,8 @@
 		}
 
 		.spotlight.style1 .content {
-			border-color: #e44c65;
+			border-color: #ECF0F1;
+			background-color: rgba(44, 62, 80, 0.78);
 		}
 
 		.spotlight.style2 .content {
@@ -3327,7 +3329,7 @@
 	}
 
 	body.landing #header {
-		background: #B6B0B9;
+		background: none;
 		box-shadow: none;
 		position: fixed;
 		font-weight: bold;

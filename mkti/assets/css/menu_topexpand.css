@@ -16,6 +16,7 @@
 .menu-wrap a:hover,
 .menu-wrap a:focus {
 	color: #fffce1;
+	cursor: pointer;
 }
 
 .content-wrap {
@@ -128,7 +129,7 @@
 }
 
 .show-menu .menu-wrap {
-	background: #8a92b3;
+	background: #BDC3C7;
 	width: 100%;
 	height: 125px;
 	-webkit-transform: translate3d(0,0,0);

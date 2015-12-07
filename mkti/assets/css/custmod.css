@@ -92,10 +92,10 @@
   margin: 0;
   padding: 0;
   border: none;
-  background-color: #e44c65;
-  color: #B6B0B9;
-  border-color: #B6B0B9;
-  float: right;
+  background-color: #ECF0F1;
+  color: #2C3E50;
+  border-color: #2C3E50;
+  float: left;
 }
 #open-button:hover {
   opacity: 0.6;

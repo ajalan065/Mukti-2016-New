@@ -22,6 +22,10 @@
     <link rel="stylesheet" type="text/css" href="assets/css/contcir/demo.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/contcir/common.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/contcir/style2.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/events/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/events/demo.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/events/component.css" />
+    <script src="assets/js/events/snap.svg-min.js"></script>
     <!-- Google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,600' rel='stylesheet' type='text/css'>
     <script src="assets/js/toucheffects.js"></script>
@@ -45,7 +49,7 @@
 	<body class="landing">
   <header id="header">
     <button class="fa fa-bars" id="open-button"></button>
-    
+
   </header>
 		<div id="page-wrapper">
       <div class="menu-wrap">
@@ -57,7 +61,7 @@
                 <a onClick="goToByScroll('page4'); return false;"><i class="fa fa-fw fa-heart-o"></i><span>Events</span></a>
                 <a onClick="goToByScroll('page5'); return false;"><i class="fa fa-mortar-board"></i><span>Workshops</span></a>
                 <a onClick="goToByScroll('page6'); return false;"><i class="fa fa-fw fa-newspaper-o"></i><span>Sponsors</span></a>
-                <a onClick="goToByScroll('last'); return false;"><i class="fa fa-phone"></i><span>Contacts</span></a>
+                <a onClick="goToByScroll('page7'); return false;"><i class="fa fa-phone"></i><span>Contacts</span></a>
               </div>
             </nav>
           </div>
@@ -137,7 +141,80 @@
       <!-- Three -->
       <div id="page4">
         <section id="three" class="wrapper style1 special fade-up">
-        <section class="carousel">
+        <section id="grid" class="grid clearfix">
+        <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+          <figure id="figure">
+            <img src="images/thumbs/freemex.jpg" />
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+            <figcaption id="figcaption">
+              <h2>Freemex</h2>
+              <button>See Details</button>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+          <figure id="figure">
+            <img src="images/thumbs/codecracker.jpg" />
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+            <figcaption id="figcaption">
+              <h2>Codecracker</h2>
+              <button>See Details</button>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+          <figure id="figure">
+            <img src="images/thumbs/freepl.jpg" />
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+            <figcaption id="figcaption">
+              <h2>Freepl</h2>
+              <button>See Details</button>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+          <figure id="figure">
+            <img src="images/thumbs/lipi.jpg" />
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+            <figcaption id="figcaption">
+              <h2>Lipi</h2>
+              <button>See Details</button>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+          <figure id="figure">
+            <img src="images/thumbs/incanity.jpg" />
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+            <figcaption id="figcaption">
+              <h2>Incanity</h2>
+              <button>see Details</button>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+          <figure id="figure">
+            <img src="images/thumbs/treasure.jpg" />
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+            <figcaption id="figcaption">
+              <h2>Online Treasure Hunt</h2>
+              <button>see Details</button>
+            </figcaption>
+          </figure>
+        </a>
+        <a href="#" data-path-hover="m 0,0 0,47.7775 c 24.580441,3.12569 55.897012,-8.199417 90,-8.199417 34.10299,0 65.41956,11.325107 90,8.199417 L 180,0 z">
+          <figure id="figure">
+            <img src="images/thumbs/shootball.jpg" />
+            <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="m 0,0 0,171.14385 c 24.580441,15.47138 55.897012,24.75772 90,24.75772 34.10299,0 65.41956,-9.28634 90,-24.75772 L 180,0 0,0 z"/></svg>
+            <figcaption id="figcaption">
+              <h2>Fantasy Shootball</h2>
+              <button>See Details</button>
+            </figcaption>
+          </figure>
+        </a>
+      </section>
+
+        <!-- <section class="carousel">
           <div class="reel">
             <ul class="car c-style-6">
         <li>
@@ -198,7 +275,7 @@
         </li>
       </ul>
           </div>
-        </section>
+        </section> -->
           <!-- <div class="container">
             <header class="major">
               <h2>Accumsan sed tempus adipiscing blandit</h2>
@@ -366,7 +443,7 @@
         </div>
 
 			<!-- Footer -->
-      <div id="last">
+      <div id="page7">
 				<footer id="footer">
         <div class="content">
           <div class="container">
@@ -502,7 +579,35 @@
 			<script src="assets/js/main.js"></script>
       <script src="assets/js/wow.min.js"></script>
       <script src="assets/js/classie.js"></script>
-    <script src="assets/js/navmain.js"></script>
+      <script src="assets/js/navmain.js"></script>
+      <script>
+        (function() {
+
+          function init() {
+            var speed = 330,
+            easing = mina.backout;
+
+            [].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+              var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+              pathConfig = {
+                from : path.attr( 'd' ),
+                to : el.getAttribute( 'data-path-hover' )
+              };
+
+              el.addEventListener( 'mouseenter', function() {
+                path.animate( { 'path' : pathConfig.to }, speed, easing );
+              } );
+
+              el.addEventListener( 'mouseleave', function() {
+                path.animate( { 'path' : pathConfig.from }, speed, easing );
+              } );
+            } );
+          }
+
+          init();
+
+        })();
+      </script>
       <script>
         new WOW().init();
       </script>

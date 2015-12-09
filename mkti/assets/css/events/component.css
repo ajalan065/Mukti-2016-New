@@ -120,14 +120,14 @@
 
 /* Individual styles */
 body {
-	background: #e74c3c;
+	background: #1ABC9C;
 }
 
 .grid figcaption h2 {
-	color: #e74c3c;
+	color: #1ABC9C;
 }
 .grid a:hover figcaption h2 {
-	color: #e74c3c;
+	color: #2C3E50;
 	letter-spacing: normal;
 	font-size: 88%;
 

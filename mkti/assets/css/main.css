@@ -16,6 +16,8 @@
 		font-size: 100%;
 		font: inherit;
 		vertical-align: baseline;
+
+
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -83,6 +85,11 @@
 
 	.container {
 		width: 70em;
+	}
+
+	#three
+	{
+		background-color: #34495E;
 	}
 
 	@media screen and (max-width: 1680px) {
@@ -1584,7 +1591,7 @@
 	}
 
 		a:hover {
-			color: #e44c65 !important;
+			color: #16A085 !important;
 			border-bottom-color: transparent;
 		}
 

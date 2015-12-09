@@ -115,9 +115,9 @@
 		margin: 0 5px;
 		font-size: 1em;
 	}
-	.icon-list a span {
-		display: none;
-	}
+	/*.icon-list a span {
+		display: inline-block;
+	}*/
 }
 
 /* Shown menu */

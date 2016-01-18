@@ -30,14 +30,11 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,600' rel='stylesheet' type='text/css'>
     <script src="assets/js/toucheffects.js"></script>
     <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/scroll/smooth-scroll.js"></script>
+
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <script type="text/javascript">
-      function goToByScroll(id){
-        $('html,body').animate({scrollTop: $("#"+id).offset().top},1000);
-        return false;
-      }
-
       function toggleVisibility(newSection) {
         $("#morespon").fadeOut();
       $(".section").not("#" + newSection).fadeOut(800);
@@ -56,13 +53,13 @@
       <div class="menu-wrap">
             <nav class="menu" id="nav">
               <div class="icon-list">
-                <a onClick="goToByScroll('page1'); return false;"><i class="fa fa-home"></i><span>Home</span></a>
-                <a onClick="goToByScroll('page2'); return false;"><i class="fa fa-linux"></i><span>About Us</span></a>
-                <a onClick="goToByScroll('page3'); return false;"><i class="fa fa-star"></i><span>What's In Store</span></a>
-                <a onClick="goToByScroll('page4'); return false;"><i class="fa fa-fw fa-heart-o"></i><span>Events</span></a>
-                <a onClick="goToByScroll('page5'); return false;"><i class="fa fa-mortar-board"></i><span>Workshops</span></a>
-                <a onClick="goToByScroll('page6'); return false;"><i class="fa fa-fw fa-newspaper-o"></i><span>Sponsors</span></a>
-                <a onClick="goToByScroll('page7'); return false;"><i class="fa fa-phone"></i><span>Contacts</span></a>
+                <a data-scroll href="#page1"><i class="fa fa-home"></i><span>Home</span></a>
+                <a data-scroll href="#page2"><i class="fa fa-linux"></i><span>About Us</span></a>
+                <a data-scroll href="#page3"><i class="fa fa-star"></i><span>What's In Store</span></a>
+                <a data-scroll href="#page4"><i class="fa fa-fw fa-heart-o"></i><span>Events</span></a>
+                <a data-scroll href="#page5"><i class="fa fa-mortar-board"></i><span>Workshops</span></a>
+                <a data-scroll href="#page6"><i class="fa fa-fw fa-newspaper-o"></i><span>Sponsors</span></a>
+                <a data-scroll href="#page7"><i class="fa fa-phone"></i><span>Contacts</span></a>
               </div>
             </nav>
           </div>
@@ -82,22 +79,23 @@
           <div class="content-wrap">
           <div class="contentnav">
 			<!-- Banner -->
-      <div id="page1">
+      <div id="page1" name="page1">
 				<section id="banner">
 					<div class="content">
 						<header>
 							<h2 class="wow slideInLeft">MUKTI 2016</h2>
+              <h3 class="wow zoomIn">29th-31st January, 2016</h3>
 							<p class="wow slideInRight">We, The GNU/Linux Users' Group present to you<br />
 							a great fest to live, enjoy and participate.</p>
 						</header>
-						<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+						<span class="image"><img src="images/logo.jpg" alt="mukti logo" stylt="background-color: transparent;"/></span>
 					</div>
 					<a href="#one" class="goto-next scrolly">Next</a>
 				</section>
         </div>
 
 			<!-- One -->
-      <div id="page2">
+      <div id="page2" name="page2">
 				<section id="one" class="spotlight style1 bottom">
 					<span class="image fit main"><img src="images/banner2.jpg" alt="" /></span>
 					<div class="content">
@@ -124,7 +122,7 @@
         </div>
 
 			<!-- Two -->
-      <div id="page3">
+      <div id="page3" name="page3">
 				<section id="two" class="spotlight style2 right">
 					<span class="image fit main"><img src="images/pic03.jpg" alt="" />
           </span>
@@ -141,7 +139,7 @@
 
 
       <!-- Three -->
-      <div id="page4">
+      <div id="page4" name="page4">
         <section id="three" class="wrapper style1 special fade-up">
         <h3 style="font-weight: bold; font-size: 2.85em; font-family: 'Open Sans Light',sans-serif;" class="wow flipInX" wow-data-duration="2s">Our Events</h3>
         <p style="letter-spacing: 1px; display: block; font-size: 1.2em;" class="wow zoomInUp" wow-data-duration="4s" wow-data-delay="2s">Mukti 2015 will feature a plethora of competitive events</p>
@@ -367,7 +365,7 @@
 
 
 			<!-- Four -->
-      <div id="page5">
+      <div id="page5" name="page5">
       <div style=" background-color: rgba(129, 122, 143, 0.8);">
         <div class="wow zoomInUp" style="padding: 2em; text-align: center;letter-spacing: 1px; display: block; font-size: 1.2em;">Grab the oppurtunity to explore new things this Mukti. We bring to you a series of workshops
         </div>
@@ -419,7 +417,7 @@
         </div>
 
 			<!-- Five -->
-      <div id="page6">
+      <div id="page6" name="page6">
 				<section id="eight" class="wrapper style2 special fade">
 					<div class="container">
           <h4 class="wow slideInDown"> We appreciate the contributions of our Major Sponsor for Mukti '16</h4>
@@ -492,7 +490,7 @@
         </div>
 
 			<!-- Footer -->
-      <div id="page7">
+      <div id="page7" name="page7">
 				<footer id="footer">
         <div class="content">
           <div class="container">
@@ -503,7 +501,7 @@
                   <h4>Namit Mahuvakar</h4>
                   <p>President<br />+91-9804223050</p>
                 </div> -->
-               <div class="wow zoomIn" data-wow-duration="2s">
+               <div class="wow zoomIn" data-wow-duration="3s" data-wow-delay="1s">
                 <div class="circont">
                   <section class="cirmain">
                     <ul class="ch-grid">
@@ -659,6 +657,17 @@
       </script>
       <script>
         new WOW().init();
+      </script>
+      <script>
+        smoothScroll.init({
+    selector: '[data-scroll]', // Selector for links (must be a valid CSS selector)
+    selectorHeader: '[data-scroll-header]', // Selector for fixed headers (must be a valid CSS selector)
+    speed: 1000, // Integer. How fast to complete the scroll in milliseconds
+    easing: 'easeInOutCubic', // Easing pattern to use
+    updateURL: true, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+    offset: 0, // Integer. How far to offset the scrolling anchor location in pixels
+    callback: function ( toggle, anchor ) {} // Function to run after scrolling
+});
       </script>
 	</body>
 </html>

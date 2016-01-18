@@ -18,7 +18,7 @@
 
 		var	$window = $(window),
 			$body = $('body');
-
+      // $(document).load().scrollTop(0);
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
 
@@ -26,6 +26,7 @@
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
 				}, 0);
+        $body.load().scrollTop(0);
 			});
 
 		// Touch mode.

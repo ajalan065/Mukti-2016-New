@@ -34,7 +34,8 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
     <script type="text/javascript">
       function goToByScroll(id){
-        $('html,body').animate({scrollTop: $("#"+id).offset().top},2000);
+        $('html,body').animate({scrollTop: $("#"+id).offset().top},1000);
+        return false;
       }
 
       function toggleVisibility(newSection) {

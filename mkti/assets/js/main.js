@@ -23,10 +23,10 @@
 			$body.addClass('is-loading');
 
 			$window.on('load', function() {
+				$body.load().scrollTop(0);
 				window.setTimeout(function() {
 					$body.removeClass('is-loading');
 				}, 0);
-        $body.load().scrollTop(0);
 			});
 
 		// Touch mode.

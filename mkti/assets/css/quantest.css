@@ -18,6 +18,8 @@ body  {
   background:url('../../images/bg/Quantest.jpg');
   background-size:cover;
   font-family: 'Open Sans Light';
+  background-repeat:   no-repeat;
+  background-position: center center;
 }
 h1
 {
